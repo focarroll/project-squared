@@ -24,7 +24,7 @@ For any questions email 25pbrausch@xbhs.net, 25tholloway@xbhs.net, 25kdhingra@xb
     
 3. Install Git Bash from a direct download link to access this project's repository. (https://www.git-scm.com/downloads).
 
-4. Install GitHub Desktop.
+4. Install GitHub Desktop. (https://desktop.github.com/)
 
 5. On the code section of this page click the green code button open it with GitHub Desktop and clone the repository.
 
