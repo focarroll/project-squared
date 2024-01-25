@@ -13,7 +13,7 @@ Many Open-Source projects already have most of their functionality put into plac
 
 Mainly, this project will be a combination of mini-projects and helpful programs all designed to help a user accomplish something all made by the Xaverian community!
 
-# Onboarding (Mainly for people who were not present at the first two meetings)
+# Onboarding
 
 For any questions email 25pbrausch@xbhs.net, 25tholloway@xbhs.net, 25kdhingra@xbhs.net, or deggli@xbhs.com.
 
