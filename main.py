@@ -9,7 +9,7 @@ from programs.hello import hello
 
 #add your imported function here:
 programs = [hello, 
-            calculate]
+            calculate,]
 
 def main():
     #clear screen

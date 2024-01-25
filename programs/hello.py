@@ -3,4 +3,4 @@
 def hello():
     name = input("What's your name? ")
 
-    print(f"Hi, {name}")
+    print(f"Hello, {name}")
