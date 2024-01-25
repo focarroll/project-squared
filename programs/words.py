@@ -1,4 +1,0 @@
-def words():
-    word = input("What's your favorite word? ")
-
-    print(f"I loved , {word}")
