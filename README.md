@@ -11,10 +11,7 @@ Many Open-Source projects already have most of their functionality put into plac
 
 # The Idea
 
-Mainly, this project will be a combination of mini-projects and helpful programs all designed to help a user accomplish something all made by yourselves!
-
-**EXAMPLE GAME TUTORIAL:** (https://vim-adventures.com/)
-**CURRENT GAME PAGE:** (https://pbbrausch.github.io/py-adventures/)
+Mainly, this project will be a combination of mini-projects and helpful programs all designed to help a user accomplish something all made by the Xaverian community!
 
 # Onboarding (Mainly for people who were not present at the first two meetings)
 
