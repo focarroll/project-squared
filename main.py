@@ -34,10 +34,8 @@ def main():
         for i, option in enumerate(catagories):
             print(f'{i+1}. {option}\n')
 
-        print(f'{len(catagories)+1}. Back\n')
-
         #validate input is in range
-        catagory = get_input(catagories)
+        catagory = get_input(catagories, False)
         
         # Choose Program
         clear_screen()
@@ -56,12 +54,13 @@ def main():
         #show all programs options in catagory
         for i, option in enumerate(programs):
             print(f'{i+1}. {option.__name__}.py\n')
+
+        print(f'{len(programs)+1}. Back\n')
         
-
         #validate input is in range
-        program = get_input(programs)
+        program = get_input(programs, True)
 
-        if (program == len(programs)):
+        if (program == len(programs)-1):
             continue
 
         clear_screen()
@@ -70,18 +69,20 @@ def main():
 
         return
 
-def get_input(options, back=False):
+def get_input(options, back):
     choice = -1
     while choice > len(options) or choice < 0:
         try:
-            choice = int(input(f'(1-{len(options)}): ')) - 1
             if back:
-                return 
+                choice = int(input(f'(1-{len(options)+1}): ')) - 1
+                if choice == len(options):
+                    return choice-1
+            else:
+                choice = int(input(f'(1-{len(options)}): ')) - 1
 
         except ValueError:
             continue
-    
-    
+
     return choice
         
 def clear_screen():
