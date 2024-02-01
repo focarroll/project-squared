@@ -6,7 +6,6 @@ import os
 #    #folder  #file name        #function name
 from programs.utilities.calculator import calculator
 from programs.misc.hello import hello
-from programs.misc.words import word
 from programs.games.rpg import rpg
 
 #Catagories for programs:
@@ -15,8 +14,7 @@ catagories = ["Miscellaneous",
               "Games"]
 
 #add your imported function here:
-misc = [hello, 
-        word]
+misc = [hello]
 
 utilities = [calculator]
 
