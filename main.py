@@ -75,6 +75,8 @@ def get_input(options, back=False):
     while choice > len(options) or choice < 0:
         try:
             choice = int(input(f'(1-{len(options)}): ')) - 1
+            if back:
+                return 
 
         except ValueError:
             continue
