@@ -13,7 +13,7 @@ Many Open-Source projects already have most of their functionality put into plac
 
 Mainly, this project will be a combination of mini-projects and helpful programs all designed to help a user accomplish something all made by the Xaverian community!
 
-# Onboarding (Mainly for people who were not present at the first two meetings)
+# Onboarding
 
 For any questions email 25pbrausch@xbhs.net, 25tholloway@xbhs.net, 25kdhingra@xbhs.net, or deggli@xbhs.com.
 
@@ -24,7 +24,7 @@ For any questions email 25pbrausch@xbhs.net, 25tholloway@xbhs.net, 25kdhingra@xb
     
 3. Install Git Bash from a direct download link to access this project's repository. (https://www.git-scm.com/downloads).
 
-4. Install GitHub Desktop.
+4. Install GitHub Desktop. (https://desktop.github.com/)
 
 5. On the code section of this page click the green code button open it with GitHub Desktop and clone the repository.
 
