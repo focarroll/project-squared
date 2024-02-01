@@ -6,10 +6,12 @@ import os
 #    #folder  #file name        #function name
 from programs.calculator import calculate
 from programs.hello import hello
+from programs.words import word
 
 #add your imported function here:
 programs = [hello, 
-            calculate]
+            calculate,
+            word]
 
 def main():
     #clear screen
