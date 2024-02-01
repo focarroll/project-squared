@@ -7,11 +7,13 @@ import os
 from programs.calculator import calculate
 from programs.hello import hello
 from programs.words import word
+from programs.rpg import rpg
 
 #add your imported function here:
 programs = [hello, 
             calculate,
-            word]
+            word,
+            rpg]
 
 def main():
     #clear screen
