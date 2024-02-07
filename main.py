@@ -7,6 +7,7 @@ import os
 from programs.utilities.calculator import calculator
 from programs.misc.hello import hello
 from programs.games.rpg import rpg
+from programs.games.quizGame import quizGame
 
 #Catagories for programs:
 catagories = ["Miscellaneous",
@@ -18,7 +19,7 @@ misc = [hello]
 
 utilities = [calculator]
 
-games = [rpg]
+games = [rpg, quizGame]
 
 def main():
     #clear screen
