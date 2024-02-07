@@ -22,11 +22,10 @@ utilities = [calculator]
 games = [rpg, quizGame]
 
 def main():
-    #clear screen
     while (True):
-        # Choose Catagory
-        os.system('cls' if os.name == 'nt' else 'clear')
+        clear_screen()
 
+        # Choose Catagory
         print("Choose a catagory: \n")
 
         #show all catagory options
@@ -34,15 +33,20 @@ def main():
             print(f'{i+1}. {option}\n')
 
         #validate input is in range
-        catagory = get_input(catagories, False)
+        choice = -1
+        while choice >= len(catagories) or choice < 0:
+            try:
+                choice = int(input(f'(1-{len(catagories)}): ')) - 1
+            except ValueError:
+                continue
         
-        # Choose Program
         clear_screen()
         
+        # Choose Program
         print("Choose a program: \n")
 
         programs = None
-        match (catagory):
+        match (choice):
             case 0:              
                 programs = misc
             case 1:
@@ -57,33 +61,22 @@ def main():
         print(f'{len(programs)+1}. Back\n')
         
         #validate input is in range
-        program = get_input(programs, True)
+        choice = -1
+        while choice > len(programs) or choice < 0:
+            try:
+                choice = int(input(f'(1-{len(programs)+1}): ')) - 1
+            except ValueError:
+                continue
 
-        if (program == len(programs)-1):
+        if choice == len(programs):
             continue
 
-        clear_screen()
+        #clear_screen()
 
-        programs[program]()
+        programs[choice]()
 
         return
 
-def get_input(options, back):
-    choice = -1
-    while choice > len(options) or choice < 0:
-        try:
-            if back:
-                choice = int(input(f'(1-{len(options)+1}): ')) - 1
-                if choice == len(options):
-                    return choice-1
-            else:
-                choice = int(input(f'(1-{len(options)}): ')) - 1
-
-        except ValueError:
-            continue
-
-    return choice
-        
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
