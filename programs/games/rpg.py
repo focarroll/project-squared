@@ -9,7 +9,8 @@ def rpg():
     global player
     player = Player(input('Username: '), get_multiplier(init(['Easy', 'Normal', 'Hard', 'Very Hard'])))
 
-    turn()
+    while True:
+        turn()
 
 
 def turn():
@@ -31,8 +32,6 @@ def turn():
             potions(player)
         case 4:
             settings()
-
-    return turn()
 
 
 def died():
