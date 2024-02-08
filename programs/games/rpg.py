@@ -16,7 +16,7 @@ def turn():
 
     if player.health <= 0:
         if died() == False:
-            player.health = player.maxHealth
+            respawn()
         else:
             sys.exit(0)
 
@@ -37,7 +37,17 @@ def turn():
 
 def died():
     return player_input(player, ['Continue?', 'Quit.'], 'You died...') - 1
-    
+
+def respawn():
+    player.level = 1
+    player.exp_needed = 20
+    player.health = 100
+    player.maxHealth = 100
+    player.defense = 0
+    player.damage = 5
+    player.speed = 3
+    player.gold = 0
+    player.area_multiplier = 1
 
 def get_multiplier(difficulty):
     return round(0.33 + int(difficulty) / 3, 2)
