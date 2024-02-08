@@ -8,6 +8,7 @@ from programs.utilities.calculator import calculator
 from programs.misc.hello import hello
 from programs.games.rpg import rpg
 from programs.games.quizGame import quizGame
+from programs.misc.HelloWorld import helloWorld
 
 #Catagories for programs:
 catagories = ["Miscellaneous",
@@ -15,7 +16,7 @@ catagories = ["Miscellaneous",
               "Games"]
 
 #add your imported function here:
-misc = [hello]
+misc = [hello, helloWorld]
 
 utilities = [calculator]
 
