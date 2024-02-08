@@ -71,7 +71,7 @@ def main():
         if choice == len(programs):
             continue
 
-        #clear_screen()
+        clear_screen()
 
         programs[choice]()
 
